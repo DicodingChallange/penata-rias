@@ -1,0 +1,52 @@
+Aplikas Data Penata Rias - MUA (Make-Up Artist)
+1. Login
+2. Registrasi
+3. Home/Beranda 
+4. Profil Penata Rias
+5. Portofolio (Hasil Karya Penata Rias, Pengalaman)
+6. Lokasi
+7. Range Harga
+8. Blog + Review (Fitur tambahan, sunnah)
+
+Atribut User(Registrasi) migration_add_table:
+id
+nama_lengkap
+alamat
+whatsapp
+foto_profil
+tempat_kerja
+status : ada, sibuk, sedang bekerja, online.
+
+Atribut Portofolio :
+id
+user_id
+gambar_utama
+pengalaman
+kemampuan
+aktivitas_sekarang
+gambar1
+gambar2
+gambar3
+gambar4
+gambar5
+gambar6
+
+
+Atribut Lokasi :
+id
+lokasi : desa, kec, kab. (pakai api) ==select
+keterangan
+
+Atribut Range Harga :
+id
+range_harga
+keterangan
+
+
+
+
+
+
+
+
+
