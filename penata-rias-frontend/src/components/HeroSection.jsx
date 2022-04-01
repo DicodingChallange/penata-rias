@@ -20,7 +20,7 @@ const serviceImages = [
 ]
 const useStyles = makeStyles({
     root: {
-        backgroundColor: '#FFF7F5'
+        backgroundColor: '#FFF7F5',
     },
     heading3: {
         fontWeight: 'bold !important',
@@ -65,7 +65,7 @@ const HeroSection = () => {
 
                 >
                     <Grid container
-                        sx={{ alignItems: 'center' }}
+                        sx={{ alignItems: 'center', marginTop: '4rem' }}
                     >
                         <Grid item md={6} xs={12} >
                             <img src={artist1} style={{ width: '100%' }} />
