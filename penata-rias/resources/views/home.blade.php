@@ -16,10 +16,10 @@
                 <div class="inner">
                     <h3>96</h3>
 
-                    <p>Santri</p>
+                    <p>Penata Rias</p>
                 </div>
                 <div class="icon">
-                    <i class="fas fa-fw fa-user-graduate"></i>
+                    <i class="fas fa-fw fa-person-booth"></i>  
                 </div>
                 <a href="/santri" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
@@ -30,10 +30,11 @@
                 <div class="small-box bg-green">
                 <div class="inner">
                     <h3>4</h3>
-                    <p>Kelas</p>
+                    <p>Portofolio</p>
                 </div>
                 <div class="icon">
-                    <i class="ion fas fa-fw fa-th"></i>
+                    <i class="fas fas fa-id-card"></i>
+                    {{-- <i class="fa-solid fa-id-card-clip"></i> --}}
                 </div>
                 <a href="/kelas" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
@@ -44,10 +45,10 @@
             <div class="small-box bg-yellow">
                 <div class="inner">
                     <h3>5</h3>
-                    <p>Guru</p>
+                    <p>Range Harga</p>
                 </div>
             <div class="icon">
-                <i class="fas fa-fw fa-users"></i>
+                <i class="fas fa-fw fa-money-bill-wave"></i>
             </div>
                 <a href="/guru" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -58,10 +59,10 @@
             <div class="small-box bg-red">
                 <div class="inner">
                     <h3>8</h3>
-                    <p>Pelajaran</p>
+                    <p>Lokasi</p>
                 </div>
             <div class="icon">
-                <i class="fas fa-fw fa-copy"></i>
+                <i class="fas fa-fw fa-house-user"></i>
             </div>
             <a href="/pelajaran" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
