@@ -255,7 +255,7 @@ return [
         [
             'text' => 'Portofolio',
             'url'  => 'portofolio',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-id-card',
         ],
         
         ['header' => 'FEATURE'],
