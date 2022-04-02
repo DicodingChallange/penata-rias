@@ -71,6 +71,11 @@ return [
     'usermenu_desc' => true,
     'usermenu_profile_url' => true,
 
+    'usermenu_profile_url' => true,
+    'usermenu_portofolio_url' => true,
+    'usermenu_lokasi_url' => true,
+    'usermenu_range_harga_url' => true,
+
     /*
     |--------------------------------------------------------------------------
     | Layout
@@ -188,7 +193,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => '/',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',

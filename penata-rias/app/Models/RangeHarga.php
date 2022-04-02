@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class RangeHarga extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id'];
+
+    public function usermenu_range_harga_url()
+    {
+        return 'range-harga';
+    }
 }

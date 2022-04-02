@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Lokasi extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id'];
+
+    public function usermenu_lokasi_url()
+    {
+        return 'lokasi';
+    }
 }
