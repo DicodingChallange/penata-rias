@@ -15,4 +15,9 @@ class Portofolio extends Model
     {
         return 'portofolio';
     }
+
+    public function profile()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }

@@ -71,7 +71,7 @@ return [
     'usermenu_desc' => true,
     'usermenu_profile_url' => true,
 
-    'usermenu_profile_url' => true,
+    'adminlte_profile_url' => true,
     'usermenu_portofolio_url' => true,
     'usermenu_lokasi_url' => true,
     'usermenu_range_harga_url' => true,
