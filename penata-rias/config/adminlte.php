@@ -188,7 +188,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => '/',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -262,12 +262,12 @@ return [
         [
             'text'    => 'Lokasi',
             'url'     => 'lokasi',
-            'icon'    => 'fas fa-fw fa-book',
+            'icon'    => 'fas fa-fw fa-landmark',
         ],
         [
             'text'    => 'Range Harga',
             'url'     => 'range-harga',
-            'icon'    => 'fas fa-fw fa-book',
+            'icon'    => 'fas fa-fw fa-money-bill',
         ],
     ],
 
