@@ -1,7 +1,7 @@
 import { AppBar, Box, Button, Container, IconButton, Menu, MenuItem, Slide, Toolbar, Tooltip, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import RedeemOutlinedIcon from '@mui/icons-material/RedeemOutlined';
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { makeStyles } from "@mui/styles";
 const pages = ['Home', 'Artists', 'Reviews', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -21,6 +21,7 @@ const Header = (props) => {
     const [anchorElNav, setAnchorElNav] = useState(null);
     const [anchorElUser, setAnchorElUser] = useState(null);
     const [hoverMenu, onHoverMenu] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(null);
     const classes = useStyles();
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
@@ -34,6 +35,9 @@ const Header = (props) => {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
+    useLayoutEffect(() => {
+
+    }, [])
     return (
         <>
             <AppBar
