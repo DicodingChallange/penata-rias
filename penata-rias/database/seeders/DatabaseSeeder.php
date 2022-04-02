@@ -15,11 +15,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        User::create([
-            'name' => 'admin',
-            'email' => 'admin@gmail.com',
-            'password' => bcrypt('admin123'),
-            // 'role' => 'admin'
-        ]);
+        $this->call(ProfileSeeder::class);
+        $this->call(PortofolioSeeder::class);
+        $this->call(LokasiSeeder::class);
+        $this->call(RangeHargaSeeder::class);
     }
 }
