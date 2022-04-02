@@ -14,7 +14,12 @@ class AddPenataRiasTableToUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->string('alamat')->nullable();
+            $table->string('whatsapp')->nullable();
+            $table->string('foto_profil')->nullable();
+            $table->string('tempat_kerja')->nullable();
+            $table->string('status')->nullable();
+            $table->string('role')->nullable();
         });
     }
 
@@ -26,12 +31,7 @@ class AddPenataRiasTableToUsers extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('alamat');
-            $table->string('whatsapp');
-            $table->string('foto_profil');
-            $table->string('tempat_kerja');
-            $table->string('status ');
-            $table->string('role');
+            Schema::dropIfExists('users');
         });
     }
 }

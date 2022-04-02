@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Profile')
+@section('title', 'Portofolio')
 
 @section('content_header')
     <!-- Content Header (Page header) -->
@@ -54,6 +54,9 @@
         </section>
         <div class="card">
             <div class="card-body">
+            <div class="mb-3">
+                <a href="/pelajaran/create" class="btn btn-primary btn-sm me-5"><i class="fa fa-fw fa-plus-square"></i>Tambah Data</a>
+            </div>
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>

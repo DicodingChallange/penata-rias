@@ -53,7 +53,7 @@ class User extends Authenticatable
         return 'That\'s a nice person';
     }
 
-    public function usermenu_profile_url()
+    public function adminlte_profile_url()
     {
         return 'profile';
     }
