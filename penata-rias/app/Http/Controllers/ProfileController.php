@@ -31,7 +31,9 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        //
+        return view('profile.create', [
+            'profile' => User::all(),
+        ]);
     }
 
     /**
@@ -42,7 +44,7 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

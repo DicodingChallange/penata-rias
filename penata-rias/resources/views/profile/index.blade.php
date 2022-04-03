@@ -55,7 +55,7 @@
         <div class="card">
             <div class="card-body">
             <div class="mb-3">
-                <a href="/profil/create" class="btn btn-primary btn-sm me-5"><i class="fa fa-fw fa-plus-square"></i>Tambah Data</a>
+                <a href="/profile/create" class="btn btn-primary btn-sm me-5"><i class="fa fa-fw fa-plus-square"></i>Tambah Data</a>
             </div>
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
