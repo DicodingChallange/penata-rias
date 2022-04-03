@@ -14,7 +14,7 @@
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                 <div class="inner">
-                    <h3>96</h3>
+                    <h3>20</h3>
 
                     <p>Penata Rias</p>
                 </div>
@@ -29,7 +29,7 @@
                 <!-- small box -->
                 <div class="small-box bg-green">
                 <div class="inner">
-                    <h3>4</h3>
+                    <h3>18</h3>
                     <p>Portofolio</p>
                 </div>
                 <div class="icon">
@@ -44,7 +44,7 @@
             <!-- small box -->
             <div class="small-box bg-yellow">
                 <div class="inner">
-                    <h3>5</h3>
+                    <h3>3</h3>
                     <p>Range Harga</p>
                 </div>
             <div class="icon">

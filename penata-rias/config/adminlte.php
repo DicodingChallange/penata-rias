@@ -267,12 +267,12 @@ return [
         [
             'text'    => 'Lokasi',
             'url'     => 'lokasi',
-            'icon'    => 'fas fa-fw fa-book',
+            'icon'    => 'fas fa-fw fa-landmark',
         ],
         [
             'text'    => 'Range Harga',
             'url'     => 'range-harga',
-            'icon'    => 'fas fa-fw fa-book',
+            'icon'    => 'fas fa-fw fa-money-bill',
         ],
     ],
 
