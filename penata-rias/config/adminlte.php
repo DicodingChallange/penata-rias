@@ -253,7 +253,7 @@ return [
         ],
         ['header' => 'account_settings'],
         [
-            'text' => 'profile',
+            'text' => 'Kelola Profil',
             'url'  => 'profile',
             'icon' => 'fas fa-fw fa-user',
         ],

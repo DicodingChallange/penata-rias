@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portofolio;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PortofolioController extends Controller
@@ -21,7 +22,8 @@ class PortofolioController extends Controller
     public function index()
     {
         return view('portofolio.index', [
-            'portofolio' => Portofolio::all(),
+            'portofolios' => Portofolio::all(),
+            // 'profile' => User::all(),
         ]);
     }
 

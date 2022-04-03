@@ -16,16 +16,16 @@ class CreatePortofoliosTable extends Migration
         Schema::create('portofolios', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id');
-            $table->string('gambar_utama');
             $table->string('pengalaman');
             $table->string('kemampuan');
             $table->string('aktivitas_sekarang');
-            $table->string('gambar1');
-            $table->string('gambar2');
-            $table->string('gambar3');
-            $table->string('gambar4');
-            $table->string('gambar5');
-            $table->string('gambar6');
+            $table->string('gambar_utama')->nullable();
+            $table->string('gambar1')->nullable();
+            $table->string('gambar2')->nullable();
+            $table->string('gambar3')->nullable();
+            $table->string('gambar4')->nullable();
+            $table->string('gambar5')->nullable();
+            $table->string('gambar6')->nullable();
             $table->timestamps();
         });
     }

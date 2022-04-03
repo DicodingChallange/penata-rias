@@ -55,27 +55,39 @@
         <div class="card">
             <div class="card-body">
             <div class="mb-3">
-                <a href="/pelajaran/create" class="btn btn-primary btn-sm me-5"><i class="fa fa-fw fa-plus-square"></i>Tambah Data</a>
+                {{-- <a href="/portofolio/create" class="btn btn-primary btn-sm me-5"><i class="fa fa-fw fa-plus-square"></i>Tambah Data</a> --}}
             </div>
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                 <th>No</th>
-                <th>Nama Pelajaran</th>
-                <th>Nilai KKM</th>
-                <th>Aksi</th>
+                <th>Nama</th>
+                <th>Pengalaman</th>
+                <th>Kemampuan</th>
+                <th>Aktifitas Sekarang</th>
+                <th>Gambar Utama</th>
+                {{-- <th>Gambar1</th>
+                <th>Gambar2</th>
+                <th>Gambar3</th>
+                <th>Gambar3</th>
+                <th>Gambar4</th>
+                <th>Gambar5</th>
+                <th>Gambar6</th> --}}
                 </tr>
                 </thead>
                 <tbody>
-                {{-- <tr>
-                    @foreach ($pelajarans as $pelajaran)
+                <tr>
+                    @foreach ($portofolios as $portofolio)
                     <td> {{$loop->iteration}} </td>
-                    <td>{{$pelajaran->nama_pelajaran}}</td>
-                    <td>{{$pelajaran->nilai_kkm}}</td>
+                    <td>{{$portofolio->profile->name}}</td>
+                    <td>{{$portofolio->pengalaman}}</td>
+                    <td>{{$portofolio->kemampuan}}</td>
+                    <td>{{$portofolio->aktivitas_sekarang}}</td>
+                    <td>{{$portofolio->gambar_utama}}</td>
                     <td >                                        
-                        <form method="post" action="/pelajaran/{{$pelajaran->id}}" class="form-inline">
-                            <a href="/pelajaran/{{$pelajaran->id}}" class="btn btn-sm btn-success" ><i class="fas fa-eye"></i></a>
-                            <a href="/pelajaran/{{$pelajaran->id}}/edit" class="btn btn-sm btn-warning" ><i class="fas fa-edit"></i></a>
+                        <form method="post" action="/portofolio/{{$portofolio->id}}" class="form-inline">
+                            <a href="/portofolio/{{$portofolio->id}}" class="btn btn-sm btn-success" ><i class="fas fa-eye"></i></a>
+                            <a href="/portofolio/{{$portofolio->id}}/edit" class="btn btn-sm btn-warning" ><i class="fas fa-edit"></i></a>
                             @csrf
                             @method('delete')
                             <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete "><i class="fas fa-trash"></i></button>    
@@ -98,9 +110,9 @@
                             </div>
                             </div>
                         </div>
-                    </td>
-                    @endforeach
-                </tr> --}}
+                    </td>                    
+                </tr> 
+                @endforeach
                 </tbody>
             </table>
             </div>
