@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Portofolio;
 
 class PortofolioSeeder extends Seeder
 {
@@ -13,6 +14,11 @@ class PortofolioSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Portofolio::create([
+            'user_id' => 2,
+            'pengalaman' => 'Wedding Decoration',
+            'kemampuan' => 'Penata Rias Pengantin dan Decorasi Pernikahan',
+            'aktivitas_sekarang' => 'Penata Rias',
+        ]);
     }
 }

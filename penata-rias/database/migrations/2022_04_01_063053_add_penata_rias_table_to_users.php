@@ -14,8 +14,11 @@ class AddPenataRiasTableToUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
+            $table->string('nama_pemilik')->nullable();
             $table->string('alamat')->nullable();
             $table->string('whatsapp')->nullable();
+            $table->string('sosial_media')->nullable();
+            $table->string('profil_bio')->nullable();
             $table->string('foto_profil')->nullable();
             $table->string('tempat_kerja')->nullable();
             $table->string('status')->nullable();
