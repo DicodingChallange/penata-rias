@@ -18,10 +18,10 @@ class AddPenataRiasTableToUsers extends Migration
             $table->string('alamat')->nullable();
             $table->string('whatsapp')->nullable();
             $table->string('sosial_media')->nullable();
-            $table->string('profil_bio')->nullable();
             $table->string('foto_profil')->nullable();
             $table->string('tempat_kerja')->nullable();
             $table->string('status')->nullable();
+            $table->string('profil_bio')->nullable();
             $table->string('role')->nullable();
         });
     }
@@ -34,7 +34,7 @@ class AddPenataRiasTableToUsers extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            Schema::dropIfExists('users');
+            // Schema::dropIfExists('users');
         });
     }
 }

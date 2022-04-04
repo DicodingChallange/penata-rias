@@ -15,7 +15,7 @@
             <h3 class="card-title">Buat @yield('title')</h3>
         </div>
         <div class="card-body">
-            <form action="/santri" method="POST" enctype="multipart/form-data" >
+            <form action="/profile" method="POST" enctype="multipart/form-data" >
                 @csrf
                 <div class="row">
                     <div class="col-lg-6">
@@ -25,6 +25,24 @@
                             >
                             <div class="text-danger">
                                 @error('name')
+                                {{$message}}
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input name="email" class="form-control" value="{{old('email')}}">
+                            <div class="text-danger">
+                                @error('email')
+                                {{$message}}
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" value="{{old('password')}}">
+                            <div class="text-danger">
+                                @error('password')
                                 {{$message}}
                                 @enderror
                             </div>
@@ -56,6 +74,8 @@
                                 @enderror
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-6">
                         <div class="form-group">
                             <label for="whatsapp">No Whatsapp</label>
                             <input name="whatsapp" class="form-control" value="{{old('whatsapp')}}">
@@ -74,9 +94,6 @@
                                 @enderror
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        
                         <div class="form-group">
                             <label for="status">Status</label>
                             <input name="status" class="form-control" value="{{old('status')}}">
@@ -97,24 +114,23 @@
                         </div>
                         <div class="form-group">
                             <div class="form-group">
-                                <label for="image" class="form-label">Gambar Profil</label>
+                                <label for="foto_profil" class="form-label">Gambar Profil</label>
                                 <img class="img-preview img-fluid mb-3 col-sm-5">
                                 <div class="img-preview custom-file img-fluid">
-                                  <input type="file" class="custom-file-input form-control" id="image" name="image" onchange="previewImage()">
-                                  <label class="custom-file-label" for="image">Pilih Gambar</label>
+                                  <input type="file" class="custom-file-input form-control" id="foto_profil" name="foto_profil" onchange="previewImage()">
+                                  <label class="custom-file-label" for="foto_profil">Pilih Gambar</label>
                                 </div>
                                 <div class="text-danger">
-                                    @error('image')
+                                    @error('foto_profil')
                                     {{$message}}
                                     @enderror
                                 </div>
-                              </div>
-                            
+                            </div> 
                             </div>
                         </div>
                     </div>
                 <div class="box-footer">
-                <button type="submit" class="btn btn-primary float-right floa">Simpan</button>
+                <button type="submit" class="btn btn-primary float-right">Simpan</button>
                 </div>
             </form>        
         </div>
@@ -126,7 +142,7 @@
 
 <script>
     function previewImage(){
-        const image = document.querySelector('#image');
+        const image = document.querySelector('#foto_profil');
         const imgPreview = document.querySelector('.img-preview');
 
         imgPreview.style.display = 'block';

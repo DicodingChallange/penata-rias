@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class ProfileController extends Controller
 {
@@ -31,9 +32,7 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        return view('profile.create', [
-            'profile' => User::all(),
-        ]);
+        return view('profile.create');
     }
 
     /**
@@ -44,7 +43,31 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        
+        // dd($request);
+        // return $request;
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:5|max:255',
+            'nama_pemilik' => 'required',
+            'alamat' => 'required',
+            'whatsapp' => 'required',
+            'sosial_media' => 'required',
+            'profil_bio' => 'required',
+            'tempat_kerja' => 'required',
+            'status' => 'required',
+            'foto_profil' => 'image|file|max:1024',
+        ]);
+
+        $validatedData['password'] = Hash::make($validatedData['password']);
+
+        if($request->file('foto_profil')){
+            $validatedData['foto_profil'] = $request->file('foto_profil')->store('foto_profil');
+        }
+
+        User::create($validatedData);
+
+        return redirect('profile')->with('success', 'Profil telah ditambahkan');
     }
 
     /**
